@@ -1,6 +1,7 @@
 # Compétences mesurées : 
 
-[[_TOC_]]
+[source](https://learn.microsoft.com/fr-fr/certifications/resources/study-guides/AZ-900#skills-measured-as-of-july-31-2023)
+
 ## Description des concepts de cloud (25 à 30 %) :
 ### Décrire le cloud computing :
 - **Définir le cloud computing :**
@@ -127,3 +128,51 @@
 
   **Cas d'usage :**
   > Emails, messagerie, Office365 ...
+
+## Décrire l’architecture et les services Azure (35 à 40 %):
+### Décrire les principaux composants architecturaux d’Azure
+- **Décrire les régions, les paires de régions et les régions souveraines Azure**
+  
+  - **Geography :**
+  
+      Zone du monde qui contient au moins **une région** mais il peut y en avoir plusieurs. Ex: France est une région. Généralement ça correspond à un pays, mais ça peut-être un continent.
+
+  -  **Région :**
+  
+      Zone géographique avec au moins **un centre de données** mais il peut y en avoir plusieurs. Réseau faible latence. Azure equilibre les charges de travail de chaque région.
+      Quand on déploie une ressource dans Azure, on est amené à choisir la région.
+
+  -  **Paires de région :**
+      
+      Deux régions dans la même géography
+
+  -  **Régions souveraine :**
+
+      Instances d'Azure idéolée de l'instance principale. Utilisées à des fins légales ou de conformité. 
+ 
+
+- **Décrire les zones de disponibilité**
+
+  - **Definition :**
+  
+    Centres de données physiquement séparés au sein d'une région Azure. Un ou plusieurs datacenter. Limite d'isolation --> Si une zone de dispo tombe en panne, l'autre doit fonctionner. Elles sont connectés entre elles par un réseau privé trés rapide.
+  
+  - **Usage :**
+  
+    Utilisées principalement pour les machines virtuelles, les disques managés, les équilibreurs de charge et les bases de données SQL
+
+- **Décrire les centres de données Azure**
+  
+    Bâtiment qui contient les serveurs avec son propre système d'alimentation, de refroidissement et de réseau.
+
+- **Décrire les ressources et les groupes de ressources Azure**
+  
+    - **Ressource :**
+  
+      Bloc de construction de base d'Azure. Quand on crée/provisionne/déploie, c'est une ressource. Ex. une machine virtuelle, un réseau virtuel, une DB ...
+
+    - **Groupe de ressource :**
+
+      Regroupement de ressources. Quand on crée une ressource, on la place dasn un groupe de ressources. 
+      `Groupe de ressource 1 -- N ressource`
+    - 
